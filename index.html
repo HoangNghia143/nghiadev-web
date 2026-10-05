@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2f5f7">
+  <meta name="description" content="Thư viện phần mềm máy tính được chọn lọc, kèm mô tả ngắn và liên kết tải từ trang chủ chính thức.">
+  <title>NghiaDEV — Phần mềm tốt, tải từ nguồn chuẩn</title>
+  <!-- Nap font va stylesheet giao dien ben ngoai. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Thanh thong bao va dieu huong dau trang. -->
+  <div class="topline"><strong>GHI CHÚ:</strong>&nbsp; Tải phần mềm an toàn nhất từ trang chủ nhà phát triển.</div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="sidebar-top">
+        <a class="brand" href="#top" aria-label="NghiaDEV, về đầu trang"><span class="brand-mark" aria-hidden="true"><span class="brand-gear">⚙</span><span class="brand-iot">IoT</span></span> NghiaDEV</a>
+        <div class="header-tools">
+          <button class="header-tool nav-toggle" id="nav-toggle" type="button" aria-controls="header-nav" aria-expanded="true" aria-label="Thu gọn menu" title="Thu gọn menu"><span aria-hidden="true">☰</span></button>
+          <button class="header-tool theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Bật giao diện tối" title="Bật giao diện tối"><span id="theme-icon" aria-hidden="true">☾</span></button>
+        </div>
+      </div>
+      <nav class="header-nav" id="header-nav" aria-label="Điều hướng chính"><a href="#thu-vien" aria-current="page">Thư viện</a><a href="#nguyen-tac">Nguyên tắc</a><a href="about.html">Giới thiệu</a></nav>
+      <div class="header-note"><span class="status-dot" aria-hidden="true"></span> Tuyển chọn có chủ đích</div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Gioi thieu ngan va cac ung dung noi bat. -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Góc công cụ số của bạn</div>
+          <h1 id="hero-title">Phần mềm tốt.<br><span>Tải từ nguồn chuẩn.</span></h1>
+          <p class="hero-copy">Tìm những công cụ hữu ích cho máy tính, từ làm việc mỗi ngày đến sáng tạo nội dung. Mỗi liên kết đều đưa bạn về trang chủ chính thức.</p>
+          <div class="hero-actions"><a class="primary-link" href="#thu-vien">Khám phá thư viện <span aria-hidden="true">↓</span></a><span class="hero-caption">Miễn phí · Chọn lọc · Rõ nguồn</span></div>
+        </div>
+        <div class="hero-art featured-carousel" id="featured-carousel" role="region" aria-roledescription="carousel" aria-label="Phần mềm nổi bật" tabindex="0">
+          <div class="art-meta"><span>Trong hộp công cụ</span><b id="featured-count" aria-live="polite"></b></div>
+          <div class="featured-slide" id="featured-slide" aria-live="polite">
+            <div class="featured-icon" id="featured-icon" aria-hidden="true"></div>
+            <div class="featured-copy">
+              <span class="featured-category" id="featured-category"></span>
+              <h2 id="featured-title"></h2>
+              <p id="featured-description"></p>
+              <a class="featured-link" id="featured-link" target="_blank" rel="noopener noreferrer">Trang tải chính thức <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="featured-footer">
+            <div class="featured-progress" aria-hidden="true"><span id="featured-progress-fill"></span></div>
+            <div class="carousel-controls">
+              <button class="carousel-button" id="featured-previous" type="button" aria-label="Phần mềm trước" title="Phần mềm trước">←</button>
+              <button class="carousel-button" id="featured-next" type="button" aria-label="Phần mềm tiếp theo" title="Phần mềm tiếp theo">→</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Thu vien co the loc theo danh muc va tim theo tu khoa. -->
+    <section class="library wrap" id="thu-vien" aria-labelledby="library-title">
+      <div class="section-heading">
+        <div><div class="section-kicker">Bộ sưu tập</div><h2 id="library-title">Phần mềm &amp; tiện ích</h2></div>
+        <div class="result-count" id="result-count" aria-live="polite">18 mục</div>
+      </div>
+      <!-- Cac nut danh muc va o tim kiem. -->
+      <div class="toolbar">
+        <div class="filters" role="group" aria-label="Lọc theo danh mục">
+          <button class="filter-button" type="button" data-category="all" aria-pressed="true">Tất cả</button>
+          <button class="filter-button" type="button" data-category="office" aria-pressed="false">Văn phòng</button>
+          <button class="filter-button" type="button" data-category="media" aria-pressed="false">Đa phương tiện</button>
+          <button class="filter-button" type="button" data-category="design" aria-pressed="false">Thiết kế</button>
+          <button class="filter-button" type="button" data-category="dev" aria-pressed="false">Lập trình</button>
+          <button class="filter-button" type="button" data-category="utility" aria-pressed="false">Tiện ích</button>
+        </div>
+        <form class="search-form" role="search" id="search-form"><input id="search-input" type="search" placeholder="Tìm phần mềm, tiện ích..." aria-label="Tìm phần mềm"><button type="submit">Tìm kiếm</button></form>
+      </div>
+
+      <!-- Moi article la mot muc phan mem hoac tai lieu. -->
+      <div class="software-grid" id="software-grid">
+        <article class="software-card" data-category="docs" data-search="office 2010 64-bit slide trình chiếu powerpoint tài liệu rar" hidden>
+          <div class="card-top"><div class="software-icon"><img src="data:image/png;base64,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" alt="Logo PowerPoint" loading="lazy"></div><span class="category-label">Tài liệu</span></div>
+          <h3>Office 2010 64-bit</h3><p>Tải về máy rồi giải nén để xem nội dung.</p>
+          <div class="card-bottom"><span class="platform">Tài liệu · RAR</span><a class="download-link" href="./Office2010-64bit.rar" download>Tải slide <span aria-hidden="true">↓</span></a></div>
+        </article>
+        <article class="software-card" data-category="media" data-search="vlc media player xem video nghe nhạc đa phương tiện">
+          <div class="card-top"><div class="software-icon"><img src="https://cdn.simpleicons.org/videolan/FF8800" alt="Logo VLC" loading="lazy"></div><span class="category-label">Đa phương tiện</span></div>
+          <h3>VLC Media Player</h3><p>Phát hầu hết định dạng video và âm thanh mà không cần cài thêm codec.</p>
+          <div class="card-bottom"><span class="platform">Windows · macOS · Linux</span><a class="download-link" href="https://www.videolan.org/vlc/" target="_blank" rel="noopener noreferrer">Trang tải <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="software-card" data-category="office" data-search="libreoffice văn phòng soạn thảo bảng tính trình chiếu">
+          <div class="card-top"><div class="software-icon"><img src="https://cdn.simpleicons.org/libreoffice/18A303" alt="Logo LibreOffice" loading="lazy"></div><span class="category-label">Văn phòng</span></div>
+          <h3>LibreOffice</h3><p>Bộ ứng dụng văn phòng mã nguồn mở gồm soạn thảo, bảng tính và trình chiếu.</p>
+          <div class="card-bottom"><span class="platform">Windows · macOS · Linux</span><a class="download-link" href="https://www.libreoffice.org/download/download-libreoffice/" target="_blank" rel="noopener noreferrer">Trang tải <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="software-card" data-category="utility" data-search="7-zip nen giai nen file zip rar tien ich">
+          <div class="card-top"><div class="software-icon"><img src="https://cdn.simpleicons.org/7zip/239120" alt="Logo 7-Zip" loading="lazy"></div><span class="category-label">Tiện ích</span></div>
+          <h3>7-Zip</h3><p>Nén và giải nén tệp gọn nhẹ, hỗ trợ định dạng 7z, ZIP, TAR và nhiều loại khác.</p>
+          <div class="card-bottom"><span class="platform">Windows</span><a class="download-link" href="https://www.7-zip.org/" target="_blank" rel="noopener noreferrer">Trang tải <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="software-card" data-category="dev" data-search="visual studio code vscode lap trinh code editor">
+          <div class="card-top"><div class="software-icon"><img src="https://cdn.simpleicons.org/visualstudiocode/007ACC" alt="Logo Visual Studio Code" loading="lazy"></div><span class="category-label">Lập trình</span></div>
+          <h3>Visual Studio Code</h3><p>Trình soạn thảo mã nguồn linh hoạt với hệ sinh thái tiện ích mở rộng phong phú.</p>
+          <div class="card-bottom"><span class="platform">Windows · macOS · Linux</span><a class="download-link" href="https://code.visualstudio.com/download" target="_blank" rel="noopener noreferrer">Trang tải <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="software-card" data-category="design" data-search="gimp chinh sua anh do hoa thiet ke">
+          <div class="card-top"><div class="software-icon"><img src="https://cdn.simpleicons.org/gimp/5C5543" alt="Logo GIMP" loading="lazy"></div><span class="category-label">Thiết kế</span></div>
+          <h3>GIMP</h3><p>Công cụ chỉnh sửa ảnh và xử lý đồ họa miễn phí, phù hợp nhiều quy trình sáng tạo.</p>
+          <div class="card-bottom"><span class="platform">Windows · macOS · Linux</span><a class="download-link" href="https://www.gimp.org/downloads/" target="_blank" rel="noopener noreferrer">Trang tải <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="software-card" data-category="design" data-search="blender 3d mo hinh dien anh hoat hinh thiet ke">
+          <div class="card-top"><div class="software-icon"><img src="https://cdn.simpleicons.org/blender/E87D0D" alt="Logo Blender" loading="lazy"></div><span class="category-label">Thiết kế</span></div>
+          <h3>Blender</h3><p>Bộ công cụ 3D toàn diện cho dựng hình, hoạt hình, kỹ xảo và tạo nội dung.</p>
+          <div class="card-bottom"><span class="platform">Windows · macOS · Linux</span><a class="download-link" href="https://www.blender.org/download/" target="_blank" rel="noopener noreferrer">Trang tải <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="software-card" data-category="media" data-search="obs studio livestream quay man hinh ghi hinh da phuong tien">
+          <div class="card-top"><div class="software-icon"><img src="https://cdn.simpleicons.org/obsstudio/302E31" alt="Logo OBS Studio" loading="lazy"></div><span class="category-label">Đa phương tiện</span></div>
+          <h3>OBS Studio</h3><p>Ghi hình màn hình và phát trực tiếp với khả năng trộn nhiều nguồn nội dung.</p>
+          <div class="card-bottom"><span class="platform">Windows · macOS · Linux</span><a class="download-link" href="https://obsproject.com/download" target="_blank" rel="noopener noreferrer">Trang tải <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="software-card" data-category="utility" data-search="firefox trinh duyet web bao mat tien ich">
+          <div class="card-top"><div class="software-icon"><img src="https://cdn.simpleicons.org/firefoxbrowser/FF7139" alt="Logo Firefox" loading="lazy"></div><span class="category-label">Tiện ích</span></div>
+          <h3>Firefox</h3><p>Trình duyệt web tập trung vào quyền riêng tư, có nhiều tùy chọn cá nhân hóa.</p>
+          <div class="card-bottom"><span class="platform">Windows · macOS · Linux</span><a class="download-link" href="https://www.mozilla.org/firefox/new/" target="_blank" rel="noopener noreferrer">Trang tải <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="software-card" data-category="utility" data-search="rufus tao usb boot cai windows linux iso">
+          <div class="card-top"><div class="software-icon"><span class="software-monogram" style="--brand-color:#2875a8" aria-hidden="true">RU</span></div><span class="category-label">Tiện ích</span></div>
+          <h3>Rufus</h3><p>Tạo USB khởi động để cài Windows hoặc Linux từ tệp ISO.</p>
+          <div class="card-bottom"><span class="platform">Windows</span><a class="download-link" href="https://rufus.ie/" target="_blank" rel="noopener noreferrer">Trang tải <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="software-card" data-category="utility" data-search="winrar nen giai nen rar zip tep dung thu ban quyen">
+          <div class="card-top"><div class="software-icon"><span class="software-monogram" style="--brand-color:#7c3e8f" aria-hidden="true">RAR</span></div><span class="category-label">Tiện ích</span></div>
+          <h3>WinRAR</h3><p>Nén và giải nén RAR, ZIP cùng nhiều định dạng khác. Có thời gian dùng thử.</p>
+          <div class="card-bottom"><span class="platform">Windows</span><a class="download-link" href="https://www.rarlab.com/download.htm" target="_blank" rel="noopener noreferrer">Trang tải <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="software-card" data-category="office" data-search="unikey bo go tieng viet go tieng viet telex vni">
+          <div class="card-top"><div class="software-icon"><span class="software-monogram" style="--brand-color:#197b58" aria-hidden="true">UK</span></div><span class="category-label">Văn phòng</span></div>
+          <h3>UniKey</h3><p>Bộ gõ tiếng Việt gọn nhẹ, hỗ trợ kiểu gõ Telex và VNI.</p>
+          <div class="card-bottom"><span class="platform">Windows</span><a class="download-link" href="https://www.unikey.org/download.html" target="_blank" rel="noopener noreferrer">Trang tải <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="software-card" data-category="utility" data-search="google chrome chrome trinh duyet web browser">
+          <div class="card-top"><div class="software-icon"><img src="https://cdn.simpleicons.org/googlechrome/4285F4" alt="Logo Google Chrome" loading="lazy"></div><span class="category-label">Tiện ích</span></div>
+          <h3>Google Chrome</h3><p>Trình duyệt web phổ biến, đồng bộ dấu trang và mật khẩu qua tài khoản Google.</p>
+          <div class="card-bottom"><span class="platform">Windows · macOS · Linux</span><a class="download-link" href="https://www.google.com/chrome/" target="_blank" rel="noopener noreferrer">Trang tải <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="software-card" data-category="dev" data-search="notepad++ notepad plus plus soan thao van ban code lap trinh">
+          <div class="card-top"><div class="software-icon"><img src="https://cdn.simpleicons.org/notepadplusplus/90E59A" alt="Logo Notepad++" loading="lazy"></div><span class="category-label">Lập trình</span></div>
+          <h3>Notepad++</h3><p>Trình soạn thảo văn bản và mã nguồn nhẹ, hỗ trợ nhiều ngôn ngữ lập trình.</p>
+          <div class="card-bottom"><span class="platform">Windows</span><a class="download-link" href="https://notepad-plus-plus.org/downloads/" target="_blank" rel="noopener noreferrer">Trang tải <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="software-card" data-category="utility" data-search="everything tim kiem tep file thu muc windows">
+          <div class="card-top"><div class="software-icon"><span class="software-monogram" style="--brand-color:#d58b24" aria-hidden="true">E</span></div><span class="category-label">Tiện ích</span></div>
+          <h3>Everything</h3><p>Tìm tệp và thư mục trên Windows nhanh chóng theo tên.</p>
+          <div class="card-bottom"><span class="platform">Windows</span><a class="download-link" href="https://www.voidtools.com/downloads/" target="_blank" rel="noopener noreferrer">Trang tải <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="software-card" data-category="utility" data-search="sharex chup anh man hinh quay man hinh chia se">
+          <div class="card-top"><div class="software-icon"><span class="software-monogram" style="--brand-color:#42a5f5" aria-hidden="true">SX</span></div><span class="category-label">Tiện ích</span></div>
+          <h3>ShareX</h3><p>Chụp ảnh, quay màn hình và ghi lại vùng nội dung cần chia sẻ.</p>
+          <div class="card-bottom"><span class="platform">Windows</span><a class="download-link" href="https://getsharex.com/downloads" target="_blank" rel="noopener noreferrer">Trang tải <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="software-card" data-category="utility" data-search="crystaldiskinfo kiem tra suc khoe o cung ssd hdd nhiet do">
+          <div class="card-top"><div class="software-icon"><span class="software-monogram" style="--brand-color:#2186a6" aria-hidden="true">CDI</span></div><span class="category-label">Tiện ích</span></div>
+          <h3>CrystalDiskInfo</h3><p>Theo dõi tình trạng sức khỏe và nhiệt độ ổ cứng HDD, SSD.</p>
+          <div class="card-bottom"><span class="platform">Windows</span><a class="download-link" href="https://crystalmark.info/en/software/crystaldiskinfo/" target="_blank" rel="noopener noreferrer">Trang tải <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="software-card" data-category="utility" data-search="cpu-z cpuid xem thong tin cpu bo xu ly mainboard ram bo nho">
+          <div class="card-top"><div class="software-icon"><span class="software-monogram" style="--brand-color:#cf3d49" aria-hidden="true">CPU</span></div><span class="category-label">Tiện ích</span></div>
+          <h3>CPU-Z</h3><p>Xem thông tin bộ xử lý, bo mạch chủ và bộ nhớ của máy tính.</p>
+          <div class="card-bottom"><span class="platform">Windows · Android</span><a class="download-link" href="https://www.cpuid.com/softwares/cpu-z.html" target="_blank" rel="noopener noreferrer">Trang tải <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="software-card" data-category="utility" data-search="malwarebytes diet virus malware phan mem doc hai bao mat">
+          <div class="card-top"><div class="software-icon"><img src="https://cdn.simpleicons.org/malwarebytes/2563EB" alt="Logo Malwarebytes" loading="lazy"></div><span class="category-label">Tiện ích</span></div>
+          <h3>Malwarebytes</h3><p>Công cụ quét phần mềm độc hại; kiểm tra điều kiện và tính năng của phiên bản miễn phí.</p>
+          <div class="card-bottom"><span class="platform">Windows · macOS</span><a class="download-link" href="https://www.malwarebytes.com/mwb-download" target="_blank" rel="noopener noreferrer">Trang tải <span aria-hidden="true">↗</span></a></div>
+        </article>
+      </div>
+      <nav class="pagination" id="pagination" aria-label="Phân trang thư viện" hidden>
+        <div class="pagination-controls">
+          <button class="pagination-step" id="previous-page" type="button">← Trước</button>
+          <div class="page-numbers" id="page-numbers" aria-label="Chọn trang"></div>
+          <button class="pagination-step" id="next-page" type="button">Sau →</button>
+        </div>
+        <span class="pagination-summary" id="page-summary"></span>
+      </nav>
+      <div class="empty-state" id="empty-state"><strong>Chưa tìm thấy phần mềm phù hợp</strong>Thử từ khóa khác hoặc chọn một danh mục khác nhé.</div>
+      <!-- Luu y ve nguon tai va an toan tep. -->
+      <aside class="source-note" id="nguyen-tac"><span aria-hidden="true">↗</span><div><strong>Luôn kiểm tra nguồn tải.</strong> Liên kết phần mềm mở trang chủ nhà phát triển. Hãy kiểm tra đúng hệ điều hành và đọc điều khoản sử dụng trước khi cài đặt.</div></aside>
+    </section>
+  </main>
+  <!-- Chan trang. -->
+  <footer class="site-footer"><div class="wrap footer-inner"><span class="footer-brand">NghiaDEV</span><span>Chia sẻ công cụ tốt, bắt đầu từ một nguồn tải đáng tin cậy.</span><span>© 2026</span></div></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    // Lay cac dieu khien va muc thu vien can cap nhat.
+    const filterButtons = [...document.querySelectorAll('.filter-button')];
+    const softwareCards = [...document.querySelectorAll('.software-card:not([hidden])')];
+    const searchInput = document.querySelector('#search-input');
+    const resultCount = document.querySelector('#result-count');
+    const emptyState = document.querySelector('#empty-state');
+    const pagination = document.querySelector('#pagination');
+    const previousPageButton = document.querySelector('#previous-page');
+    const nextPageButton = document.querySelector('#next-page');
+    const pageNumbers = document.querySelector('#page-numbers');
+    const pageSummary = document.querySelector('#page-summary');
+    const navigation = document.querySelector('#header-nav');
+    const navigationToggle = document.querySelector('#nav-toggle');
+    const themeToggle = document.querySelector('#theme-toggle');
+    const themeIcon = document.querySelector('#theme-icon');
+    const featuredCarousel = document.querySelector('#featured-carousel');
+    const featuredSlide = document.querySelector('#featured-slide');
+    const featuredIcon = document.querySelector('#featured-icon');
+    const featuredCount = document.querySelector('#featured-count');
+    const featuredCategory = document.querySelector('#featured-category');
+    const featuredTitle = document.querySelector('#featured-title');
+    const featuredDescription = document.querySelector('#featured-description');
+    const featuredLink = document.querySelector('#featured-link');
+    const featuredProgressFill = document.querySelector('#featured-progress-fill');
+    const featuredCards = softwareCards.filter((card) => card.dataset.category !== 'docs');
+    const pageSize = 6;
+    let activeCategory = 'all';
+    let currentPage = 1;
+    let featuredIndex = 0;
+
+    const normalizeText = (text) => text.toLocaleLowerCase('vi').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd');
+
+    function showLogoFallback(image) {
+      const words = image.alt.replace(/^Logo\s*/, '').trim().split(/\s+/).filter(Boolean);
+      const abbreviation = words.length > 1
+        ? words.map((word) => word[0]).join('').slice(0, 3)
+        : (words[0] || 'APP').slice(0, 3);
+      const fallback = document.createElement('span');
+      fallback.className = 'software-monogram';
+      fallback.textContent = abbreviation.toUpperCase();
+      fallback.setAttribute('aria-hidden', 'true');
+      image.replaceWith(fallback);
+    }
+
+    function watchLogo(image) {
+      image.addEventListener('error', () => showLogoFallback(image), { once: true });
+      if (image.complete && image.naturalWidth === 0) showLogoFallback(image);
+    }
+
+    function updateFeaturedSlide() {
+      const card = featuredCards[featuredIndex];
+      const logo = card.querySelector('.software-icon').firstElementChild.cloneNode(true);
+      featuredIcon.replaceChildren(logo);
+      if (logo.tagName === 'IMG') watchLogo(logo);
+
+      featuredCategory.textContent = card.querySelector('.category-label').textContent;
+      featuredTitle.textContent = card.querySelector('h3').textContent;
+      featuredDescription.textContent = card.querySelector('p').textContent;
+      featuredLink.href = card.querySelector('.download-link').href;
+      featuredCount.textContent = `${String(featuredIndex + 1).padStart(2, '0')} / ${String(featuredCards.length).padStart(2, '0')}`;
+      featuredProgressFill.style.width = `${((featuredIndex + 1) / featuredCards.length) * 100}%`;
+    }
+
+    document.querySelector('#featured-previous').addEventListener('click', () => {
+      featuredIndex = (featuredIndex - 1 + featuredCards.length) % featuredCards.length;
+      updateFeaturedSlide();
+    });
+    document.querySelector('#featured-next').addEventListener('click', () => {
+      featuredIndex = (featuredIndex + 1) % featuredCards.length;
+      updateFeaturedSlide();
+    });
+    featuredCarousel.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowLeft') document.querySelector('#featured-previous').click();
+      if (event.key === 'ArrowRight') document.querySelector('#featured-next').click();
+    });
+    updateFeaturedSlide();
+
+    function setDarkMode(isDark) {
+      document.body.classList.toggle('dark-mode', isDark);
+      themeToggle.setAttribute('aria-pressed', String(isDark));
+      themeToggle.setAttribute('aria-label', isDark ? 'Bật giao diện sáng' : 'Bật giao diện tối');
+      themeToggle.title = isDark ? 'Bật giao diện sáng' : 'Bật giao diện tối';
+      themeIcon.textContent = isDark ? '☀' : '☾';
+      document.querySelector('meta[name="theme-color"]').content = isDark ? '#11181d' : '#f2f5f7';
+    }
+
+    try {
+      setDarkMode(localStorage.getItem('kho-mem-theme') === 'dark');
+    } catch {
+      setDarkMode(false);
+    }
+
+    themeToggle.addEventListener('click', () => {
+      const isDark = !document.body.classList.contains('dark-mode');
+      setDarkMode(isDark);
+      try {
+        localStorage.setItem('kho-mem-theme', isDark ? 'dark' : 'light');
+      } catch {
+        // Theme switching still works when browser storage is unavailable.
+      }
+    });
+
+    navigationToggle.addEventListener('click', () => {
+      const isExpanded = navigationToggle.getAttribute('aria-expanded') === 'true';
+      const nextExpanded = !isExpanded;
+      navigationToggle.setAttribute('aria-expanded', String(nextExpanded));
+      navigationToggle.setAttribute('aria-label', nextExpanded ? 'Thu gọn menu' : 'Mở menu');
+      navigationToggle.title = nextExpanded ? 'Thu gọn menu' : 'Mở menu';
+
+      if (window.matchMedia('(max-width: 760px)').matches) {
+        navigation.classList.toggle('is-hidden', !nextExpanded);
+      } else {
+        document.body.classList.toggle('nav-collapsed', !nextExpanded);
+      }
+    });
+
+    document.querySelectorAll('.software-icon img').forEach(watchLogo);
+
+    // An cac muc khong khop danh muc hoac tu khoa, roi cap nhat bo dem.
+    function updateSoftwareList() {
+      const query = normalizeText(searchInput.value.trim());
+      const matchingCards = softwareCards.filter((card) => {
+        const matchesCategory = activeCategory === 'all' || card.dataset.category === activeCategory;
+        const searchableText = normalizeText(`${card.dataset.search} ${card.querySelector('h3').textContent} ${card.querySelector('p').textContent} ${card.querySelector('.category-label').textContent}`);
+        return matchesCategory && (!query || searchableText.includes(query));
+      });
+
+      const totalPages = Math.ceil(matchingCards.length / pageSize);
+      currentPage = Math.min(Math.max(currentPage, 1), totalPages || 1);
+      const firstIndex = (currentPage - 1) * pageSize;
+      const lastIndex = Math.min(firstIndex + pageSize, matchingCards.length);
+      const visibleCards = new Set(matchingCards.slice(firstIndex, lastIndex));
+
+      softwareCards.forEach((card) => { card.hidden = !visibleCards.has(card); });
+      resultCount.textContent = `${String(matchingCards.length).padStart(2, '0')} mục`;
+      emptyState.style.display = matchingCards.length === 0 ? 'block' : 'none';
+      pagination.hidden = totalPages <= 1;
+      previousPageButton.disabled = currentPage === 1;
+      nextPageButton.disabled = currentPage === totalPages || totalPages === 0;
+      pageSummary.textContent = matchingCards.length === 0
+        ? 'Không có mục nào'
+        : `Hiển thị ${firstIndex + 1}–${lastIndex} trên ${matchingCards.length} mục`;
+
+      pageNumbers.replaceChildren();
+      for (let page = 1; page <= totalPages; page += 1) {
+        const button = document.createElement('button');
+        button.className = 'page-number';
+        button.type = 'button';
+        button.dataset.page = String(page);
+        button.textContent = String(page);
+        button.setAttribute('aria-label', `Trang ${page}`);
+        if (page === currentPage) {
+          button.classList.add('is-active');
+          button.setAttribute('aria-current', 'page');
+        }
+        pageNumbers.append(button);
+      }
+    }
+
+    // Cap nhat danh muc dang chon khi nguoi dung bam nut loc.
+    filterButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        activeCategory = button.dataset.category;
+        currentPage = 1;
+        filterButtons.forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
+        updateSoftwareList();
+      });
+    });
+
+    // Loc truc tiep khi nhap; ngan form tai lai trang khi submit.
+    searchInput.addEventListener('input', () => {
+      currentPage = 1;
+      updateSoftwareList();
+    });
+    document.querySelector('#search-form').addEventListener('submit', (event) => {
+      event.preventDefault();
+      currentPage = 1;
+      updateSoftwareList();
+    });
+
+    previousPageButton.addEventListener('click', () => {
+      currentPage -= 1;
+      updateSoftwareList();
+    });
+    nextPageButton.addEventListener('click', () => {
+      currentPage += 1;
+      updateSoftwareList();
+    });
+    pageNumbers.addEventListener('click', (event) => {
+      const pageButton = event.target.closest('button[data-page]');
+      if (!pageButton) return;
+      currentPage = Number(pageButton.dataset.page);
+      updateSoftwareList();
+    });
+
+    updateSoftwareList();
+  </script>
+</body>
+</html>
