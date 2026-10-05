@@ -65,8 +65,8 @@
     <!-- Thu vien co the loc theo danh muc va tim theo tu khoa. -->
     <section class="library wrap" id="thu-vien" aria-labelledby="library-title">
       <div class="section-heading">
-        <div><div class="section-kicker">Bộ sưu tập</div><h2 id="library-title">Phần mềm &amp; tiện ích</h2></div>
-        <div class="result-count" id="result-count" aria-live="polite">18 mục</div>
+        <div><div class="section-kicker">Bộ sưu tập</div><h2 id="library-title">Phần mềm &amp; tài liệu</h2></div>
+        <div class="result-count" id="result-count" aria-live="polite">19 mục</div>
       </div>
       <!-- Cac nut danh muc va o tim kiem. -->
       <div class="toolbar">
@@ -77,16 +77,17 @@
           <button class="filter-button" type="button" data-category="design" aria-pressed="false">Thiết kế</button>
           <button class="filter-button" type="button" data-category="dev" aria-pressed="false">Lập trình</button>
           <button class="filter-button" type="button" data-category="utility" aria-pressed="false">Tiện ích</button>
+          <button class="filter-button" type="button" data-category="docs" aria-pressed="false">Tài liệu</button>
         </div>
         <form class="search-form" role="search" id="search-form"><input id="search-input" type="search" placeholder="Tìm phần mềm, tiện ích..." aria-label="Tìm phần mềm"><button type="submit">Tìm kiếm</button></form>
       </div>
 
       <!-- Moi article la mot muc phan mem hoac tai lieu. -->
       <div class="software-grid" id="software-grid">
-        <article class="software-card" data-category="docs" data-search="office 2010 64-bit slide trình chiếu powerpoint tài liệu rar" hidden>
+        <article class="software-card" data-category="docs" data-search="office 2010 64-bit slide trình chiếu powerpoint tài liệu rar drive">
           <div class="card-top"><div class="software-icon"><img src="data:image/png;base64,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" alt="Logo PowerPoint" loading="lazy"></div><span class="category-label">Tài liệu</span></div>
-          <h3>Office 2010 64-bit</h3><p>Tải về máy rồi giải nén để xem nội dung.</p>
-          <div class="card-bottom"><span class="platform">Tài liệu · RAR</span><a class="download-link" href="./Office2010-64bit.rar" download>Tải slide <span aria-hidden="true">↓</span></a></div>
+          <h3>Office 2010 64-bit</h3><p>Mở thư mục Google Drive để xem và tải bộ slide Office 2010.</p>
+          <div class="card-bottom"><span class="platform">Tài liệu · Google Drive</span><a class="download-link" href="https://drive.google.com/drive/folders/1TiohDZxIY3cY7dLlafdvWfvGOi-kpYQz?usp=sharing" target="_blank" rel="noopener noreferrer">Mở Google Drive <span aria-hidden="true">↗</span></a></div>
         </article>
         <article class="software-card" data-category="media" data-search="vlc media player xem video nghe nhạc đa phương tiện">
           <div class="card-top"><div class="software-icon"><img src="https://cdn.simpleicons.org/videolan/FF8800" alt="Logo VLC" loading="lazy"></div><span class="category-label">Đa phương tiện</span></div>
@@ -193,13 +194,13 @@
     </section>
   </main>
   <!-- Chan trang. -->
-  <footer class="site-footer"><div class="wrap footer-inner"><span class="footer-brand">NghiaDEV</span><span>Chia sẻ công cụ tốt, bắt đầu từ một nguồn tải đáng tin cậy.</span><span>© 2026</span></div></footer>
+  <footer class="site-footer"><div class="wrap footer-inner"><span class="footer-brand">NghiaDEV.</span><span>Chia sẻ công cụ tốt, bắt đầu từ một nguồn tải đáng tin cậy.</span><span>© 2026</span></div></footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script>
     // Lay cac dieu khien va muc thu vien can cap nhat.
     const filterButtons = [...document.querySelectorAll('.filter-button')];
-    const softwareCards = [...document.querySelectorAll('.software-card:not([hidden])')];
+    const softwareCards = [...document.querySelectorAll('.software-card')];
     const searchInput = document.querySelector('#search-input');
     const resultCount = document.querySelector('#result-count');
     const emptyState = document.querySelector('#empty-state');
