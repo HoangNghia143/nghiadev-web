@@ -1,0 +1,262 @@
+:root {
+  --bg: #07050e;
+  --panel: rgba(16, 10, 28, 0.86);
+  --ink: #f7ead0;
+  --muted: #b7a48a;
+  --accent: #ff6b3d;
+  --gold: #f4c45a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: radial-gradient(circle at 30% -10%, #3a1848, var(--bg) 48%);
+  color: var(--ink);
+  font-family: Nunito, sans-serif;
+}
+
+.fog {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 85% 10%, rgba(255, 110, 40, 0.14), transparent 32%),
+    radial-gradient(circle at 10% 90%, rgba(80, 40, 180, 0.2), transparent 36%);
+}
+
+.app {
+  position: relative;
+  z-index: 1;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 22px 16px 40px;
+}
+
+.hero {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.badge,
+h1,
+.modal-kicker {
+  font-family: "Press Start 2P", cursive;
+}
+
+.badge {
+  flex: 0 0 auto;
+  margin: 4px 0 0;
+  padding: 8px 10px;
+  border: 2px solid var(--gold);
+  color: var(--gold);
+  font-size: 9px;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: clamp(16px, 2.4vw, 24px);
+  line-height: 1.55;
+}
+
+.subtitle,
+.hint,
+.status {
+  color: var(--muted);
+}
+
+.subtitle,
+.hint {
+  margin: 0;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 14px;
+}
+
+.stage {
+  min-width: 0;
+}
+
+#game {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 3px solid #4a315f;
+  border-radius: 20px;
+  background: #120c1c;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.4);
+}
+
+.hud {
+  margin-top: 12px;
+}
+
+.status {
+  min-height: 22px;
+  margin: 0 0 10px;
+  font-weight: 800;
+}
+
+.add-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+input {
+  flex: 1 1 180px;
+  min-width: 0;
+  padding: 11px 12px;
+  border: 2px solid #4d3a66;
+  border-radius: 12px;
+  background: #100a18;
+  color: var(--ink);
+  font: inherit;
+}
+
+input:focus {
+  outline: 2px solid var(--gold);
+}
+
+.btn {
+  border: 0;
+  border-radius: 12px;
+  padding: 11px 14px;
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: linear-gradient(180deg, #ff8a4a, var(--accent));
+  color: #2a0d04;
+  box-shadow: 0 6px 0 #9a2d12;
+}
+
+.btn-primary:not(:disabled):active {
+  transform: translateY(2px);
+  box-shadow: 0 4px 0 #9a2d12;
+}
+
+.btn-secondary {
+  background: var(--gold);
+  color: #2a1d04;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--muted);
+  border: 2px solid #4d3a66;
+}
+
+.roster-panel {
+  padding: 12px;
+  background: var(--panel);
+  border: 2px solid #3a2a4d;
+  border-radius: 18px;
+  max-height: 720px;
+  display: flex;
+  flex-direction: column;
+}
+
+.roster-panel h2 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.roster {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  overflow: auto;
+  display: grid;
+  gap: 4px;
+}
+
+.roster button {
+  width: 100%;
+  text-align: left;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 6px 8px;
+  background: #161022;
+  color: var(--ink);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.roster button:hover,
+.roster button.selected {
+  border-color: var(--gold);
+  background: #241832;
+}
+
+.roster .idx {
+  display: inline-block;
+  width: 28px;
+  color: var(--gold);
+  font-weight: 800;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  background: rgba(6, 3, 10, 0.72);
+  padding: 20px;
+}
+
+.overlay.hidden {
+  display: none;
+}
+
+.modal {
+  width: min(420px, 100%);
+  padding: 28px 22px;
+  text-align: center;
+  background: #1b1226;
+  border: 3px solid var(--gold);
+  border-radius: 20px;
+}
+
+.modal-kicker {
+  margin: 0 0 12px;
+  color: var(--accent);
+  font-size: 10px;
+}
+
+.modal h2 {
+  margin: 0 0 10px;
+  font-size: 32px;
+}
+
+#result-text {
+  color: var(--muted);
+}
+
+@media (max-width: 860px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .roster-panel {
+    max-height: 280px;
+  }
+}

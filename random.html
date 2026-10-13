@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đấu Trường Ngẫu Nhiên</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800;900&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="random.css" />
+  </head>
+  <body>
+    <div class="fog"></div>
+    <main class="app">
+      <header class="hero">
+        <p class="badge">2.5D arena</p>
+        <div>
+          <h1>Đấu Trường Ngẫu Nhiên</h1>
+          <p class="subtitle">
+            50 người chơi đi lại trên sân. Đặt tên, bấm bắt đầu — boss sẽ săn
+            một mục tiêu ngẫu nhiên.
+          </p>
+        </div>
+      </header>
+
+      <div class="layout">
+        <section class="stage">
+          <canvas id="game" width="1100" height="620"></canvas>
+          <div class="hud">
+            <p id="status" class="status" role="status">
+              50 chiến binh đang tuần tra. Boss đang dạo quanh.
+            </p>
+            <form id="add-form" class="add-form" autocomplete="off">
+              <input
+                id="name-input"
+                name="name"
+                type="text"
+                maxlength="14"
+                placeholder="Đặt tên cho người đang chọn..."
+                required
+              />
+              <button type="submit" class="btn btn-secondary">Đặt tên</button>
+              <button id="start-btn" class="btn btn-primary" type="button">
+                Bắt đầu
+              </button>
+              <button id="reset-btn" class="btn btn-ghost" type="button">
+                Xáo vị trí
+              </button>
+            </form>
+          </div>
+        </section>
+
+        <aside class="roster-panel">
+          <h2>Đội hình 50</h2>
+          <p class="hint" id="hint">Chọn 1 người rồi nhập tên.</p>
+          <ol id="roster" class="roster"></ol>
+        </aside>
+      </div>
+    </main>
+
+    <div id="result" class="overlay hidden" role="dialog" aria-modal="true">
+      <div class="modal">
+        <p class="modal-kicker">Mục tiêu bị chọn</p>
+        <h2 id="result-name"></h2>
+        <p id="result-text"></p>
+        <button id="again-btn" class="btn btn-primary">Chơi tiếp</button>
+      </div>
+    </div>
+
+    <script src="random.js"></script>
+  </body>
+</html>
